@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewTwitActivity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:background="@drawable/close"
+            android:layout_margin="23dp"
+            />
+
+        <Button
+            android:id="@+id/new_twit"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:background="@drawable/send_button"
+            android:layout_alignParentRight="true"
+            android:layout_margin="13dp"
+            android:text="트윗"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/empty_profile"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp">
+
+        <Button
+            android:id="@+id/add_picture"
+            android:text="pic"
+            android:layout_width="90dp"
+            android:layout_height="34dp" />
+
+        <Button
+            android:id="@+id/goCamera"
+            android:text="camera"
+            android:layout_width="90dp"
+            android:layout_height="34dp" />
+
+    </LinearLayout>
+</LinearLayout>
